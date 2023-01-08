@@ -3016,7 +3016,7 @@
     <Content Include="Views\Account\_TenantChange.js" />
     <Content Include="Views\Account\_TenantChangeModal.js" />
     <Content Include="Views\Home\Index.js" />
-    <Content Include="Views\Index\Index.js" />
+    <Content Include="Views\base\home.js" />
     <Content Include="Views\Roles\Index.js" />
     <Content Include="Views\Roles\_EditRoleModal.js" />
     <Content Include="Views\Shared\_Layout.css" />
@@ -3041,7 +3041,7 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\IndexController.cs" />
+    <Compile Include="Controllers\baseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Results\ChallengeResult.cs" />
     <Compile Include="Controllers\RolesController.cs" />
@@ -3221,7 +3221,13 @@
     <Content Include="Theme_data\assets\plugins\fontawesome\webfonts\fa-solid-900.ttf" />
     <Content Include="Theme_data\assets\plugins\fontawesome\webfonts\fa-solid-900.woff" />
     <Content Include="Theme_data\assets\plugins\fontawesome\webfonts\fa-solid-900d41d.eot" />
-    <Content Include="Views\Index\Index.cshtml" />
+    <Content Include="Views\base\home.cshtml" />
+    <Content Include="Views\base\_ViewStart.cshtml" />
+    <Content Include="Views\base\_Layout.cshtml" />
+    <Content Include="Views\base\planandprice.cshtml" />
+    <Content Include="Views\base\clients.cshtml" />
+    <Content Include="Views\base\products.cshtml" />
+    <Content Include="Views\base\contactus.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3249,6 +3255,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\BackPart\" />
+    <Folder Include="Views\FrontPart\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
